@@ -1,0 +1,9 @@
+{
+  "puppeteer:Lemegeton": {
+    "NAME": "Lemegeton",
+    "FLAVOR": "Lemegeton",
+    "DESCRIPTIONS": [
+      "Whenever you draw a card, replace it with a random card. The cost remains the same."
+    ]
+  }
+}

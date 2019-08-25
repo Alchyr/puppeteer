@@ -1,0 +1,23 @@
+{
+  "puppeteer:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage.",
+    "EXTENDED_DESCRIPTION": [
+      "Deal !D! damage."
+    ]
+  },
+  "puppeteer:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "puppeteer:Reinforcements": {
+    "NAME": "Reinforcements",
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! puppeteer:Summon_Shanghai into your hand."
+  },
+  "puppeteer:SummonShanghai": {
+    "NAME": "Summon Shanghai",
+    "DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Shanghai_Doll. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Shanghai_Doll."
+  }
+}

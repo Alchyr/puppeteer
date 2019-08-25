@@ -1,0 +1,25 @@
+[
+  {
+    "PROPER_NAME": "Summon",
+    "NAMES": [
+      "summon"
+    ],
+    "DESCRIPTION": "Puts a #yDoll into combat. You may have up to #b10 #yDolls at once."
+  },
+  {
+    "PROPER_NAME": "Shanghai Doll",
+    "NAMES": [
+      "shanghai doll",
+      "shanghai_doll"
+    ],
+    "DESCRIPTION": "A #yDoll that deals damage to the nearest enemy at the end of your turn."
+  },
+  {
+    "PROPER_NAME": "Summon Shanghai",
+    "NAMES": [
+      "summon shanghai",
+      "summon_shanghai"
+    ],
+    "DESCRIPTION": "A #b0 cost #ySkill card with #yRetain which summons a #yShanghai #yDoll and #yExhausts."
+  }
+]

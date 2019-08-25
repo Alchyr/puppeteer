@@ -1,0 +1,11 @@
+{
+  "puppeteer:Shanghai": {
+    "TEXT": [
+      "Shanghai"
+    ],
+    "EXTRA_TEXT": [
+      "Deals #b",
+      " damage to the closest enemy at the end of each turn."
+    ]
+  }
+}
