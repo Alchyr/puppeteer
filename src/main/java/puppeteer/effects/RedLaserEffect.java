@@ -47,6 +47,8 @@ public class RedLaserEffect extends AbstractGameEffect {
         targetHeight = HEIGHT * (width / WIDTH) * 0.5f;
         yOffset = targetHeight / 2.0f;
 
+        y -= yOffset;
+
         this.scale = 0.1f;
 
         playedSfx = false;
