@@ -5,7 +5,9 @@ import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import javassist.CtBehavior;
-import puppeteer.actions.character.EndTurnDollsAction;
+import puppeteer.abstracts.AbstractDoll;
+import puppeteer.actions.character.EndTurnDollAction;
+import puppeteer.fields.DollFields;
 
 @SpirePatch(
         clz = GameActionManager.class,
@@ -17,15 +19,15 @@ public class DollEndTurnPatch {
     )
     public static void dollEndTurn(GameActionManager __instance)
     {
-        AbstractDungeon.actionManager.addToBottom(new EndTurnDollsAction());
+        for (AbstractDoll d : DollFields.dolls.get(AbstractDungeon.player))
+        {
+            AbstractDungeon.actionManager.addToBottom(new EndTurnDollAction(d));
+        }
     }
 
 
 
     private static class Locator extends SpireInsertLocator {
-        private Locator() {
-        }
-
         public int[] Locate(CtBehavior ctBehavior) throws Exception {
             Matcher finalMatcher = new Matcher.FieldAccessMatcher(AbstractPlayer.class, "hand");
             return LineFinder.findInOrder(ctBehavior, finalMatcher);

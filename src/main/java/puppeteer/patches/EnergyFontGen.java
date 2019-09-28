@@ -44,9 +44,6 @@ public class EnergyFontGen {
     }
 
     private static class Locator extends SpireInsertLocator {
-        private Locator() {
-        }
-
         public int[] Locate(CtBehavior ctBehavior) throws Exception {
             Matcher finalMatcher = new Matcher.FieldAccessMatcher(FreeTypeFontGenerator.FreeTypeFontParameter.class, "borderColor");
             return new int[] { LineFinder.findAllInOrder(ctBehavior, finalMatcher)[12] };

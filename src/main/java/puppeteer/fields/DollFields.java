@@ -13,6 +13,7 @@ import java.util.ArrayList;
 )
 public class DollFields {
     public static SpireField<ArrayList<AbstractDoll>> dolls = new SpireField<>(ArrayList::new);
+    public static SpireField<AbstractDoll> targetDoll = new SpireField<>(()->null);
     public static SpireField<Integer> maxDolls = new SpireField<>(()->10);
 
     //max dolls should be set to 10 at start of each combat.

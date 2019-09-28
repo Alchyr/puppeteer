@@ -1,0 +1,97 @@
+
+hourai.png
+size: 128,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+objectAa003
+  rotate: false
+  xy: 1, 91
+  size: 33, 46
+  orig: 33, 46
+  offset: 0, 0
+  index: -1
+objectAa000
+  rotate: false
+  xy: 71, 95
+  size: 33, 46
+  orig: 33, 46
+  offset: 0, 0
+  index: -1
+objectAa001
+  rotate: false
+  xy: 89, 47
+  size: 33, 46
+  orig: 33, 46
+  offset: 0, 0
+  index: -1
+objectAa002
+  rotate: false
+  xy: 36, 91
+  size: 33, 46
+  orig: 33, 46
+  offset: 0, 0
+  index: -1
+objectAb000
+  rotate: false
+  xy: 85, 187
+  size: 38, 36
+  orig: 38, 37
+  offset: 0, 1
+  index: -1
+objectAd001
+  rotate: false
+  xy: 1, 185
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1
+objectAd000
+  rotate: false
+  xy: 43, 187
+  size: 40, 36
+  orig: 40, 36
+  offset: 0, 0
+  index: -1
+objectAh000
+  rotate: false
+  xy: 1, 1
+  size: 86, 43
+  orig: 86, 43
+  offset: 0, 0
+  index: -1
+objectAh001
+  rotate: false
+  xy: 1, 46
+  size: 86, 43
+  orig: 86, 43
+  offset: 0, 0
+  index: -1
+objectAi000
+  rotate: false
+  xy: 89, 1
+  size: 36, 44
+  orig: 36, 44
+  offset: 0, 0
+  index: -1
+objectAi001
+  rotate: false
+  xy: 1, 139
+  size: 34, 44
+  orig: 34, 44
+  offset: 0, 0
+  index: -1
+objectAk000
+  rotate: false
+  xy: 80, 143
+  size: 35, 42
+  orig: 35, 42
+  offset: 0, 0
+  index: -1
+objectAk001
+  rotate: false
+  xy: 43, 143
+  size: 35, 42
+  orig: 35, 42
+  offset: 0, 0
+  index: -1

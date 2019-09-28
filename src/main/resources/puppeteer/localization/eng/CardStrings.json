@@ -15,9 +15,58 @@
     "NAME": "Reinforcements",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! puppeteer:Summon_Shanghai into your hand."
   },
+  "puppeteer:Vanguard": {
+    "NAME": "Vanguard",
+    "DESCRIPTION": "Deal !D! damage. NL The puppeteer:Doll closest to the enemy gains !M! puppeteer:Charge."
+  },
+  "puppeteer:Spearhead": {
+    "NAME": "Spearhead",
+    "DESCRIPTION": "The target puppeteer:Doll charges through the closest enemy, dealing damage equal to double its puppeteer:Charge."
+  },
+  "puppeteer:DollActivation": {
+    "NAME": "Doll Activation",
+    "DESCRIPTION": "Add !M! puppeteer:Summon_Shanghai into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add !M! puppeteer:Summon_Hourai into your hand. NL Exhaust."
+  },
+  "puppeteer:MaterialCollection": {
+    "NAME": "Material Collection",
+    "DESCRIPTION": "Deal !D! damage. Add !M! puppeteer:Summon_Hourai into your hand."
+  },
+  "puppeteer:LuminousDolls": {
+    "NAME": "Luminous Dolls",
+    "DESCRIPTION": "ALL puppeteer:Dolls lose !M! puppeteer:Charge. NL ALL enemies lose Strength this turn equal to the puppeteer:Charge lost."
+  },
+  "puppeteer:Deanimate": {
+    "NAME": "Deanimate",
+    "DESCRIPTION": "puppeteer:Destroy a puppeteer:Doll. NL Gain Block equal to its puppeteer:Charge.",
+    "UPGRADE_DESCRIPTION": "Retain. NL puppeteer:Destroy a puppeteer:Doll. NL Gain Block equal to its puppeteer:Charge."
+  },
+  "puppeteer:ToTheLimit": {
+    "NAME": "ToTheLimit",
+    "DESCRIPTION": "Lose !M! Dexterity. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Retain. NL Lose !M! Dexterity. NL Gain [E] [E]."
+  },
+  "puppeteer:Transference": {
+    "NAME": "Transference",
+    "DESCRIPTION": "puppeteer:Destroy a puppeteer:Doll. NL ALL puppeteer:Dolls gain puppeteer:Charge equal to its puppeteer:Charge. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "puppeteer:Destroy a puppeteer:Doll. NL ALL puppeteer:Dolls gain puppeteer:Charge equal to its puppeteer:Charge."
+  },
+  "puppeteer:SaturatedSpirit": {
+    "NAME": "Spiritual Saturation",
+    "DESCRIPTION": "ALL puppeteer:Dolls gain !M! puppeteer:Charge."
+  },
   "puppeteer:SummonShanghai": {
     "NAME": "Summon Shanghai",
     "DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Shanghai_Doll. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Shanghai_Doll."
+  },
+  "puppeteer:SummonHourai": {
+    "NAME": "Summon Hourai",
+    "DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Hourai_Doll. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Hourai_Doll."
+  },
+  "puppeteer:Perception": {
+    "NAME": "Perception",
+    "DESCRIPTION": "If the closest enemy intends to attack, gain !B! Block."
   }
 }

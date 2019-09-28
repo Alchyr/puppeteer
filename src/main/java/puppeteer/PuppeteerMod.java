@@ -132,6 +132,9 @@ public class PuppeteerMod implements
     public static String makeDollPath(String resourcePath) {
         return modID + "/images/dolls/" + resourcePath;
     }
+    public static String makeEffectPath(String resourcePath) {
+        return modID + "/images/effects/" + resourcePath;
+    }
     public static String makeOrbPath(String resourcePath) {
         return modID + "/images/orb/" + resourcePath;
     }

@@ -1,10 +1,13 @@
 package puppeteer.abstracts;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import puppeteer.util.CardInfo;
 
 public abstract class AbstractSpecialTargetCard extends BaseCard {
+    protected static final Color transparent = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+
     public AbstractSpecialTargetCard(CardInfo cardInfo, boolean upgradesDescription)
     {
         super(cardInfo, upgradesDescription);
@@ -13,6 +16,10 @@ public abstract class AbstractSpecialTargetCard extends BaseCard {
     @Override
     public void renderHoverShadow(SpriteBatch sb) {
         //no.
+    }
+
+    protected void doRenderHoverShadow(SpriteBatch sb) {
+        super.renderHoverShadow(sb);
     }
 
     @Override
@@ -28,6 +35,10 @@ public abstract class AbstractSpecialTargetCard extends BaseCard {
             specialRender(sb);
             return;
         }
+        super.render(sb);
+    }
+    protected void renderBase(SpriteBatch sb)
+    {
         super.render(sb);
     }
 

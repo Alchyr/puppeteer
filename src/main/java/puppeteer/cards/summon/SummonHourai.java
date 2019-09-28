@@ -8,14 +8,15 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import puppeteer.abstracts.AbstractSpecialTargetCard;
 import puppeteer.actions.character.SummonDollAction;
-import puppeteer.dolls.Shanghai;
+import puppeteer.dolls.Hourai;
+import puppeteer.patches.DollAndMagicRenderPatch;
 import puppeteer.util.CardInfo;
 
 import static puppeteer.PuppeteerMod.makeID;
 
-public class SummonShanghai extends AbstractSpecialTargetCard {
+public class SummonHourai extends AbstractSpecialTargetCard {
     private final static CardInfo cardInfo = new CardInfo(
-            "SummonShanghai",
+            "SummonHourai",
             0,
             CardType.SKILL,
             CardTarget.NONE,
@@ -24,22 +25,22 @@ public class SummonShanghai extends AbstractSpecialTargetCard {
 
     public final static String ID = makeID(cardInfo.cardName);
 
-    private static Shanghai drawDoll;
+    private static Hourai drawDoll;
     private static boolean canRenderDoll = true;
 
-    public SummonShanghai()
+    public SummonHourai()
     {
         super(cardInfo, true);
 
         if (drawDoll == null)
-            drawDoll = new Shanghai(0, 0);
+            drawDoll = new Hourai(0, 0);
 
         setExhaust(true, false);
         AlwaysRetainField.alwaysRetain.set(this, true);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new SummonDollAction(new Shanghai(current_x, this.current_y)));
+        AbstractDungeon.actionManager.addToBottom(new SummonDollAction(new Hourai(current_x, this.current_y)));
     }
 
     @Override
@@ -49,11 +50,17 @@ public class SummonShanghai extends AbstractSpecialTargetCard {
             drawDoll.setPosition(this.current_x, this.current_y);
             drawDoll.getClosestMonster();
             drawDoll.render(sb, false, transparent);
+            DollAndMagicRenderPatch.renderMagic(drawDoll.magic);
 
             sb.setColor(Color.WHITE);
 
             if (drawDoll.closest != null)
-                drawDoll.closest.renderReticle(sb);
+            {
+                for (AbstractMonster m : drawDoll.magic.getTargets())
+                {
+                    m.renderReticle(sb);
+                }
+            }
 
             canRenderDoll = false;
         }

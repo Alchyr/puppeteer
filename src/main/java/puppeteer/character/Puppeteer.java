@@ -20,6 +20,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.Abacus;
+import com.megacrit.cardcrawl.relics.PreservedInsect;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import puppeteer.cards.basic.Defend;
@@ -71,8 +72,10 @@ public class Puppeteer extends CustomPlayer {
 
     private HashMap<SpineAnimation, AnimationData> animationMap = new HashMap<>();
 
-    private static SpineAnimation stand = new SpineAnimation(SKELETON_ATLAS, STAND_JSON, 4.0f);
-    private static SpineAnimation attack = new SpineAnimation(SKELETON_ATLAS, ATTACK_JSON, 4.0f);
+    private static SpineAnimation stand = new SpineAnimation(SKELETON_ATLAS, STAND_JSON, 2.0f);
+    private static SpineAnimation attack = new SpineAnimation(SKELETON_ATLAS, ATTACK_JSON, 2.0f);
+
+    private static final float SCALE_MOD = 1.5f;
 
     public Puppeteer()
     {
@@ -106,7 +109,7 @@ public class Puppeteer extends CustomPlayer {
     {
         SkeletonJson json = new SkeletonJson(this.atlas);
 
-        json.setScale(Settings.scale);
+        json.setScale(Settings.scale * SCALE_MOD);
         SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal(anim.skeletonUrl));
         Skeleton skeleton = new Skeleton(skeletonData);
         skeleton.setColor(Color.WHITE);
@@ -130,7 +133,7 @@ public class Puppeteer extends CustomPlayer {
         {
             SkeletonJson json = new SkeletonJson(this.atlas);
 
-            json.setScale(Settings.scale);
+            json.setScale(Settings.scale * SCALE_MOD);
             SkeletonData skeletonData = json.readSkeletonData(Gdx.files.internal(next.skeletonUrl));
             this.skeleton = new Skeleton(skeletonData);
             this.skeleton.setColor(Color.WHITE);
