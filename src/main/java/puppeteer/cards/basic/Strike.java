@@ -1,11 +1,7 @@
 package puppeteer.cards.basic;
 
-import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import puppeteer.abstracts.BaseCard;
 import puppeteer.util.CardInfo;
@@ -38,8 +34,6 @@ public class Strike extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m,
-                new DamageInfo(p, this.damage, this.damageTypeForTurn),
-                AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        damageSingle(m, AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
     }
 }

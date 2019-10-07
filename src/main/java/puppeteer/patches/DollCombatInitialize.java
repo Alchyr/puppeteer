@@ -17,5 +17,6 @@ public class DollCombatInitialize {
         //put any doll max modifying effects here
         DollFields.dolls.get(__instance).clear();
         DollFields.targetDoll.set(__instance, null);
+        DollFields.dollsThisCombat.set(__instance, 0);
     }
 }

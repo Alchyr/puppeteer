@@ -5,5 +5,19 @@
     "DESCRIPTIONS": [
       "Whenever you draw a card, replace it with a random card. The cost remains the same."
     ]
+  },
+  "puppeteer:SeaCrystal": {
+    "NAME": "Sea Crystal",
+    "FLAVOR": "Sea Crystal",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw until your hand is full. At the end of your turn, lose 1 HP for each card in your hand."
+    ]
+  },
+  "puppeteer:IDEAS": {
+    "NAME": "",
+    "FLAVOR": "",
+    "DESCRIPTIONS": [
+      "#yDolls no longer lose #yCharge at the end of each turn."
+    ]
   }
 }

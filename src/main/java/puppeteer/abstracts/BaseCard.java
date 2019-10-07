@@ -1,10 +1,22 @@
 package puppeteer.abstracts;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import puppeteer.PuppeteerMod;
 import puppeteer.enums.CharacterEnums;
 import puppeteer.util.CardInfo;
@@ -221,5 +233,42 @@ public abstract class BaseCard extends CustomCard {
         //FontHelper.cardDescFont_N.getData().setScale(1.0f);
         this.initializeTitle();
         this.initializeDescription();
+    }
+
+    protected void block()
+    {
+        addToBot(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.block));
+    }
+
+    protected void damageSingle(AbstractMonster m, AbstractGameAction.AttackEffect effect)
+    {
+        addToBot(new DamageAction(m, new DamageInfo(AbstractDungeon.player, this.damage, this.damageTypeForTurn), effect));
+    }
+    protected void damageSingle(AbstractMonster m, int amount, AbstractGameAction.AttackEffect effect)
+    {
+        addToBot(new DamageAction(m, new DamageInfo(AbstractDungeon.player, amount, this.damageTypeForTurn), effect));
+    }
+    protected void damageAll(AbstractGameAction.AttackEffect effect)
+    {
+        addToBot(new DamageAllEnemiesAction(AbstractDungeon.player, this.multiDamage, this.damageTypeForTurn, effect));
+    }
+
+    protected void applySingle(AbstractMonster m, AbstractPower power)
+    {
+        addToBot(new ApplyPowerAction(m, AbstractDungeon.player, power, power.amount));
+    }
+
+    protected void applySelf(AbstractPower power)
+    {
+        addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, power, power.amount));
+    }
+
+    protected WeakPower getWeak(AbstractMonster m, int amount)
+    {
+        return new WeakPower(m, amount, false);
+    }
+    protected VulnerablePower getVuln(AbstractMonster m, int amount)
+    {
+        return new VulnerablePower(m, amount, false);
     }
 }

@@ -1,4 +1,4 @@
-package puppeteer.cards.common.skills;
+package puppeteer.cards.rare.skills;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -15,23 +15,24 @@ import static puppeteer.PuppeteerMod.makeID;
 public class DollActivation extends BaseCard {
     private final static CardInfo cardInfo = new CardInfo(
             "DollActivation",
-            3,
+            2,
             CardType.SKILL,
             CardTarget.NONE,
-            CardRarity.UNCOMMON
+            CardRarity.RARE
     );
 
     public final static String ID = makeID(cardInfo.cardName);
 
     private static final int SUMMON = 3;
-    private static final int UPGRADE_COST = 2;
+    private static final int UPG_SUMMON = 2;
 
     public DollActivation()
     {
         super(cardInfo, false);
 
-        setCostUpgrade(UPGRADE_COST);
-        setMagic(SUMMON);
+
+
+        setMagic(SUMMON, UPG_SUMMON);
         setExhaust(true);
     }
 

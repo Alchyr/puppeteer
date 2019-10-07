@@ -40,7 +40,7 @@ public class Hourai extends AbstractDoll {
     private static String name = uiStrings.TEXT[0];
     private static String[] description = uiStrings.EXTRA_TEXT;
 
-    private static final int baseCharge = 3;
+    private static final int baseCharge = 4;
 
     public HouraiLaser magic;
 

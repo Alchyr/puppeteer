@@ -15,6 +15,10 @@
     "NAME": "Reinforcements",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! puppeteer:Summon_Shanghai into your hand."
   },
+  "puppeteer:Graze": {
+    "NAME": "Graze",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Add a puppeteer:Summon_Shanghai into your hand."
+  },
   "puppeteer:Vanguard": {
     "NAME": "Vanguard",
     "DESCRIPTION": "Deal !D! damage. NL The puppeteer:Doll closest to the enemy gains !M! puppeteer:Charge."
@@ -30,7 +34,11 @@
   },
   "puppeteer:MaterialCollection": {
     "NAME": "Material Collection",
-    "DESCRIPTION": "Deal !D! damage. Add !M! puppeteer:Summon_Hourai into your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Add !M! puppeteer:Summon_Hourai into your hand."
+  },
+  "puppeteer:Expand": {
+    "NAME": "Expand",
+    "DESCRIPTION": "Add a puppeteer:Summon_Shanghai into your hand. NL Draw !M! cards."
   },
   "puppeteer:LuminousDolls": {
     "NAME": "Luminous Dolls",
@@ -42,7 +50,7 @@
     "UPGRADE_DESCRIPTION": "Retain. NL puppeteer:Destroy a puppeteer:Doll. NL Gain Block equal to its puppeteer:Charge."
   },
   "puppeteer:ToTheLimit": {
-    "NAME": "ToTheLimit",
+    "NAME": "To The Limit",
     "DESCRIPTION": "Lose !M! Dexterity. NL Gain [E] [E].",
     "UPGRADE_DESCRIPTION": "Retain. NL Lose !M! Dexterity. NL Gain [E] [E]."
   },
@@ -65,8 +73,74 @@
     "DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Hourai_Doll. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL puppeteer:Summon a puppeteer:Hourai_Doll."
   },
+  "puppeteer:CutStrings": {
+    "NAME": "Cut Strings",
+    "DESCRIPTION": "Trigger the passive effect of a puppeteer:Doll !M! times and puppeteer:Destroy it."
+  },
+  "puppeteer:GuardDolls": {
+    "NAME": "Guard Dolls",
+    "DESCRIPTION": "Gain !B! Block for each active puppeteer:Doll."
+  },
+  "puppeteer:Escalation": {
+    "NAME": "Escalation",
+    "DESCRIPTION": "At the start of your next turn, gain [E] and draw !M! card.",
+    "UPGRADE_DESCRIPTION": "At the start of your next turn, gain [E] and draw !M! cards."
+  },
+  "puppeteer:HeavyGrimoire": {
+    "NAME": "Heavy Grimoire",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
   "puppeteer:Perception": {
     "NAME": "Perception",
     "DESCRIPTION": "If the closest enemy intends to attack, gain !B! Block."
+  },
+  "puppeteer:LemmingsParade": {
+    "NAME": "Lemmings' Parade",
+    "DESCRIPTION": "Deal !D! damage to the closest enemy for each puppeteer:Doll puppeteer:Summoned this combat. NL Exhaust.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Hits !M! times.)"
+    ]
+  },
+  "puppeteer:Pressure": {
+    "NAME": "Pressure",
+    "DESCRIPTION": "Deal !D! damage. NL If this card costs 2 or more, deal !M! damage."
+  },
+  "puppeteer:Entropy": {
+    "NAME": "Entropy",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Increase the cost of a card in your hand by 1 this combat."
+  },
+  "puppeteer:Stockpile": {
+    "NAME": "Stockpile",
+    "DESCRIPTION": "Draw !M! cards. NL Increase their cost by 1 this turn."
+  },
+  "puppeteer:ArtfulChant": {
+    "NAME": "ArtfulChant",
+    "DESCRIPTION": "Increase the cost of a card in your hand by 1 this combat. NL The next time you play it, it is played twice."
+  },
+  "puppeteer:Solitary": {
+    "NAME": "Solitary",
+    "DESCRIPTION": "Gain !B! Block X times. NL Increase the cost of ALL cards in your hand by 1 this combat."
+  },
+  "puppeteer:DevilryLightRay": {
+    "NAME": "Devilry Light Ray",
+    "DESCRIPTION": "Deal damage to ALL enemies equal to the total cost of cards in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "puppeteer:GrandGuignol": {
+    "NAME": "Grand Guignol",
+    "DESCRIPTION": "Deal damage equal to !M! times this card's cost. NL Can be played as long as you have at least [E] .",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deals !D! damage.)"
+    ]
+  },
+  "puppeteer:SlightExertion": {
+    "NAME": "Slight Exertion",
+    "DESCRIPTION": "Gain !M! Strength."
+  },
+  "puppeteer:ImmortalFlame": {
+    "NAME": "Immortal Flame",
+    "DESCRIPTION": "Whenever this card would leave your hand, return it and deal !M! damage to ALL enemies."
   }
 }

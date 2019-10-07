@@ -39,6 +39,7 @@ public class SummonDollAction extends AbstractGameAction {
         {
             //summon the doll
             DollFields.dolls.get(AbstractDungeon.player).add(summon);
+            DollFields.dollsThisCombat.set(AbstractDungeon.player, DollFields.dollsThisCombat.get(AbstractDungeon.player) + 1);
         }
     }
 }

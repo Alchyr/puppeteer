@@ -21,5 +21,10 @@
       "Deals #b",
       " damage to ALL enemies in a line at the end of each turn, then loses #b1 #yCharge"
     ]
+  },
+  "puppeteer:CostIncrease": {
+    "TEXT": [
+      "Increase the Cost"
+    ]
   }
 }

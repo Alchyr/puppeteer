@@ -36,8 +36,8 @@ public class Reinforcements extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+        block();
 
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new SummonShanghai(), this.magicNumber));
+        addToBot(new MakeTempCardInHandAction(new SummonShanghai(), this.magicNumber));
     }
 }

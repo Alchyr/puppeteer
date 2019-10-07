@@ -2,7 +2,8 @@
   {
     "PROPER_NAME": "Summon",
     "NAMES": [
-      "summon"
+      "summon",
+      "summoned"
     ],
     "DESCRIPTION": "Puts a #yDoll into combat. You may have up to #b10 #yDolls at once."
   },
@@ -18,7 +19,7 @@
     "NAMES": [
       "charge"
     ],
-    "DESCRIPTION": "The value used for a #yDoll's effects."
+    "DESCRIPTION": "The value used for a #yDoll's effects. #yDolls are #yDestroyed upon reaching 0 #yCharge."
   },
   {
     "PROPER_NAME": "Doll",
@@ -26,7 +27,7 @@
       "doll",
       "dolls"
     ],
-    "DESCRIPTION": "Dolls perform a passive effect at the end of each turn based on their #yCharge, and then lose #b1 #yCharge."
+    "DESCRIPTION": "Dolls perform a passive effect at the end of each turn based on their #yCharge, and then lose #b1 #yCharge. #yDolls are #yDestroyed upon reaching #b0 #yCharge."
   },
   {
     "PROPER_NAME": "Shanghai Doll",

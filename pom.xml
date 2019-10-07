@@ -5,7 +5,7 @@
     <artifactId>Puppeteer</artifactId>
     <name>The Puppeteer</name>
     <version>0.0.0</version>
-    <description>Behold, puppetry.\nA character mod of Alice Margatroid, from the Touhou series.</description>
+    <description>A character mod of Alice Margatroid, from the Touhou series.\n\nPretty much all sprite stuff is from an official Touhou game, Scarlet Weather Rhapsody.\nAs for card art, I don't have any yet but I probably stole that too.</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>

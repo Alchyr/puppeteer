@@ -1,6 +1,7 @@
 package puppeteer.actions.character;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import puppeteer.abstracts.AbstractDoll;
 
 public class ModifyChargeAction extends AbstractGameAction {
@@ -15,6 +16,12 @@ public class ModifyChargeAction extends AbstractGameAction {
     @Override
     public void update() {
         d.charge += this.amount;
+
+        if (d.charge <= 0)
+        {
+            d.charge = 0;
+            AbstractDungeon.actionManager.addToTop(new DestroyDollAction(d, false));
+        }
         this.isDone = true;
     }
 }
